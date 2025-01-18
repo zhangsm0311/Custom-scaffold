@@ -1,15 +1,23 @@
 {
-  "name": "auto-cli",
-  "version": "1.0.0",
+  "name": "zhang",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Vite","Vue3","TypeScript","Element-puls"],
+  "bin":{
+    "zhang":"bin/index.js"
+  },
+  "files":[
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "author": "zhangsm",
   "license": "ISC",
-  "description": "",
+  "description": "zhang-cli脚手架",
   "devDependencies": {
     "@inquirer/prompts": "^7.2.3",
     "@rollup/plugin-commonjs": "^25.0.3",
