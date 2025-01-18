@@ -1,5 +1,5 @@
 import simpleGit, { SimpleGitOptions } from 'simple-git';
-const createLogger = require('progress-estimator');
+import createLogger from 'progress-estimator';
 import chalk from 'chalk';
 
 
@@ -23,7 +23,7 @@ export const clone = async (url: string, projectName: string, options: string[])
     const git = simpleGit(gitOptions);
     try {
         await logger(git.clone(url, projectName, options), '代码下载中.....', {
-            estimated: 7000 // 预估下载时间
+            estimate: 7000 // 预估下载时间
         })
         console.log(chalk.green('代码下载成功'));
         console.log(chalk.green('========请使用npm install 安装依赖========'));

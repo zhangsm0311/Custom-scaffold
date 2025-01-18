@@ -11,11 +11,6 @@ program
     .argument('[name]', '项目名称')
     .action(async (dirName) => {
         create(dirName);
-        // if (name) {
-        //     create();
-        // } else {
-        //     console.log(`create command`)
-        // }
     });
 
 program.parse(); 
