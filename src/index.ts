@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import { version } from '../package.json'
-import { create } from '../command/create';
+import { create } from './command/create';
 
 const program = new Command("zhang-cli");  //命令行指令的名称
 program.version(version, '-v, --version');  //版本信息
