@@ -6,8 +6,17 @@ zhang-cli快速搭建前端项目的命令行工具
 
 ## 安装
 ```
-npm install -g zhang-cli
+npm install -g zhangsm-cli
 ```
+
 
 ## 使用
 zhang create
+
+
+# 更新教授架到最新版本
+zhang update    
+
+# 查看脚手架版本
+zhang -v
+zhang --version
